@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Austin's Leetcode Note</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+  </head>
+  <body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+      }
+
+      new Docute({
+        target: '#docute',
+        title: 'Leetcode Note',
+        nav: [
+          {
+            title: 'Home',
+            link: '/'
+          },
+          {
+            title: 'GitHub',
+            link: 'https://github.com/rockmanvnx6/LeetCode-Note'
+          },
+        ],
+        sidebar: [
+          {
+            title: 'Array',
+            children: [
+              {
+                title: '3Sum',
+                link: '/15'
+              },
+              {
+                title: 'Spiral Matrix',
+                link: '/54'
+              },
+              {
+                title: 'Single Number',
+                link: '/136'
+              },
+              {
+                title: 'Rotate Array',
+                link: '/189'
+              },
+            ]
+          },
+          {
+            title: 'LinkedList',
+            children: [
+              {
+                title: 'Remove Nth Node from End of List',
+                link: '/19'
+              },
+              {
+                title: 'Merge Two Sorted Lists',
+                link: '/21'
+              },
+            ]
+          },
+          {
+            title: 'Tree',
+            children: [
+              {
+                title: 'Path Sum',
+                link: '/112'
+              },
+              {
+                title: 'Lowest Common Ancestor of a Binary Tree',
+                link: '/236'
+              },
+              {
+                title: 'Merge Two Binary Tree',
+                link: '/617'
+              },
+            ]
+          },
+          // An external link
+          {
+            title: 'General Notes',
+            link: '/general'
+          }
+        ]
+      })
+    </script>
+  </body>
+</html>
