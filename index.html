@@ -14,9 +14,34 @@
         navigator.serviceWorker.register('/sw.js')
       }
 
+      var SearchResult = [
+        {title: 'Title', link: 'title1', label: 'Label is optional', description: 'Description is optional'},
+        {title: 'Another', link: 'another'},
+        {title: 'One more', link: 'one-more'},
+      ];
+
+      const searchBar = entries => {
+        return {
+          name: 'searchBar',
+          extend(api) {
+            api.enableSearch(
+                    {
+                      handler: keyword => {
+                        return entries.filter(value =>
+                                value.title.toLowerCase().includes(keyword.toLowerCase()))
+                      }
+                    }
+            );
+          }
+        }
+      }
+
       new Docute({
         target: '#docute',
         title: 'Leetcode Note',
+        plugins: [
+          searchBar(SearchResult)
+        ],
         nav: [
           {
             title: 'Home',
@@ -76,6 +101,10 @@
               {
                 title: 'Merge Two Binary Tree',
                 link: '/617'
+              },
+              {
+                title: 'Binary Tree Inorder Traversal',
+                link: '/94'
               },
             ]
           },
