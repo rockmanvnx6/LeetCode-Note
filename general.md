@@ -230,3 +230,72 @@ if(map.hasProperty(name)) {
     ```
 
     
+
+----
+
+#### 13. Use `Map` instead of Object for hashmap.
+
+```js
+let map = new Map();
+map.set('a',1);
+map.set('b',2);
+map.set('c',3);
+map.set('d',-1);
+```
+
+**a. Get all keys** Return `MapIterator`
+
+```js
+map.keys();
+```
+
+**b. Get all values** Return `MapIterator`
+
+```js
+map.values()
+```
+
+**c. Convert `MapIterator` to `Array`**
+
+```js
+[...map.keys()]
+```
+
+```js
+Array.from(map.keys())
+```
+
+**d.** **Delete a key** return `Boolean`
+
+```js
+map.delete('a');
+```
+
+**e. Check if map has a key** return `Boolean`
+
+```js
+map.has('a');
+```
+
+**f.** **Loop through the map**
+
+```js
+map.forEach((key,value) => { });
+```
+
+**g**. **Sort the map**
+
+```js
+[...map.keys()].sort((a,b) => map(a) - map(b));
+```
+
+**e. Get size (length)**
+
+```js
+map.size
+```
+
+>   `Set` has similar API for instead of `set` we have `add`
+>
+>   All of the items in a `Set` will be unique.
+
