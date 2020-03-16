@@ -289,10 +289,28 @@ map.forEach((key,value) => { });
 [...map.keys()].sort((a,b) => map(a) - map(b));
 ```
 
-**e. Get size (length)**
+**h. Get size (length)**
 
 ```js
 map.size
+```
+
+**i. Get**
+
+```js
+map.get('key');
+```
+
+**j**.**Set**
+
+```js
+map.set('key', 1);
+```
+
+**Change current item or default**
+
+```js
+map.set('key', map.get(key) + 1 || 1);
 ```
 
 >   `Set` has similar API for instead of `set` we have `add`
