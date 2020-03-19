@@ -12,3 +12,9 @@ Hopefully it will be helpful for you at some points.
 
 [Issues](https://github.com/rockmanvnx6/LeetCode-Note/issues) will be mostly for discussion of a particular problem if you have any questions for the answers.
 
+
+gogogogo.
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk5NjgxNTM2Ml19
+-->
